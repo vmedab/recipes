@@ -1,0 +1,5 @@
+node {
+  stage 'Run JMeter Test'
+  sh '/home/avidbots/Desktop/apache-jmeter-3.2/bin/jmeter.sh -Jjmeter.save.saveservice.output_format=xml -n -t /home/avidbots/Dev/webqa/2589.jmx -l test.jtl'
+  
+}
